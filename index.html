@@ -119,6 +119,10 @@
                 class="ri-price-tag-3-fill"></i> Pricing</a>
           </li>
 
+
+        
+       
+
           <li class="navbar-item">
             <a href="#contact" onclick="lenis.scrollTo('#contact')" class="navbar-link" data-nav-link><i
                 class="ri-customer-service-2-fill"></i> Contact</a>
@@ -221,8 +225,7 @@
         </div>
       </section>
 
-
-
+       
 
 
       <!-- 
@@ -798,6 +801,56 @@
           </div>
       </section>
 
+       <!--
+        - #BOOK REVIEW
+      -->
+    <section>
+      <section class="section preview" id="book review" aria-label="preview">
+        <div class="container">
+
+          <p class="section-subtitle">Review a Book</p>
+
+          <h2 class="h2 section-title has-underline">
+            Tell people what you think about a book
+            <span class="span has-before"></span>
+          </h2>
+
+          
+        
+          <head>
+            <title>Book Review Section</title>
+          </head>
+
+          <body>
+            <div id="review">
+              <div class="container1">
+              <form id="review-form">
+                <h4>Book Title</h4>
+                <input type="text" id="book-title" placeholder="Book Title" required>
+                <h4>Name</h4>
+                <input type="text" id="reviewer-name" placeholder="Enter your Name" required>
+                <h4>Write your review</h4>
+                <textarea id="review-content" placeholder="Write your review..." required></textarea>
+                <button type="submit">Submit Review</button>
+              </form>
+              
+              <div id="reviews-list">
+                <!-- Reviews will be inserted here -->
+              </div>
+                <button id="see-all-reviews">See All Reviews</button>
+                <div id="all-reviews"></div>
+            </div>
+          </div>
+
+          </div>
+          
+            <script src="script.js"></script>
+          </body>
+        </section>
+          
+
+
+
 
 
       <!-- 
@@ -887,10 +940,14 @@
       </section>
 
 
+  
+    
+
+
       <!-- 
         - #CONTACT
       -->
-
+      <section>
       <section class="section contact" id="contact" aria-label="contact">
         <div class="container">
 
@@ -904,8 +961,10 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.5834653201455!2d88.40974607348684!3d22.482281936278092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0273c5411d60d7%3A0x5d6e57763593194b!2sSouthern%20Cleve%20Housing%2C%2012%2C%20Bhagat%20Singh%20Nagar%2C%20Nayabad%2C%20Kolkata%2C%20West%20Bengal%20700150!5e0!3m2!1sen!2sin!4v1716043813992!5m2!1sen!2sin"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
 
-          <div class="wrapper">
+          <section>
+            <div class="wrapper">
             <div class="contact-card">
               <form action="" id="contact-form ">
 
@@ -943,6 +1002,7 @@
                 <p class="card-title">Email:</p>
                 <a href="mailto:support@support.com" class="card-link">support@swapreads.com</a>
               </li>
+            </section>
 
               <!-- <li>
                 <p class="social-list-title h3">Connect SwapReads socials</p>
@@ -991,9 +1051,8 @@
 
     </article>
   </main>
-
+</section>
   <!-- --Testimonials -->
-
   <h2 class="h2 section-title has-underline" style="margin-top: 15px;">
     Testimonials
     <span class="span has-before"></span>
@@ -1520,8 +1579,8 @@
 
   </script>
   <script type="module">
-    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/fire.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/fire.js";
 
     // Your web app's Firebase configuration
     const firebaseConfig = {

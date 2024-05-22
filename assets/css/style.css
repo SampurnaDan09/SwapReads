@@ -370,7 +370,7 @@ body {
 
 .btn-secondary {
   border: 1px solid var(--old-rose);
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: var(--old-rose);
   border-radius: var(--radius-5);
 }
@@ -397,14 +397,18 @@ body {
 
 .header {
   background-color: var(--white);
-
+  font-size: 14.5px;
+  font-weight: bold;
   position: absolute;
   top: 10px;
-  right: 10px;
-  left: 10px;
+  right: 3px;
+  left: 3px;
   padding-block: 12px;
   z-index: 4;
   transition: var(--transition-2);
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .header.active {
@@ -416,6 +420,8 @@ body {
   transform: translateY(-100%);
   transition: none;
   animation: slideIn 0.5s ease forwards;
+  display: flex;
+  gap: 20px;
 }
 
 @keyframes slideIn {
@@ -432,13 +438,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
 .logo {
+  display: flex;
   font-family: var(--ff-philosopher);
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--charcoal);
   line-height: 1;
+  margin-right: 20px;
 }
 
 .dark-mode .logopic {
@@ -446,12 +455,12 @@ body {
 }
 
 .nav-toggle-btn {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--charcoal);
 }
 
 .nav-toggle-btn ion-icon {
-  --ionicon-stroke-width: 20px;
+  --ionicon-stroke-width: 10px;
 }
 
 .nav-toggle-btn.active .open,
@@ -492,7 +501,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   margin-block-end: 10px;
 }
 .navbar-item:nth-child(9) .navbar-link {
@@ -1044,7 +1052,10 @@ textarea.input-field {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
+  width: 10%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rating_heading {
@@ -1388,6 +1399,8 @@ input[type="submit"]:hover {
   color: white;
   background-color: var(--old-rose);
   border-radius: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .btn-signup:hover {
@@ -1399,7 +1412,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .icon-set {
@@ -1562,6 +1575,135 @@ input[type="submit"]:hover {
   .achievement-card .card-title {
     margin-block-end: 20px;
   }
+
+  /**
+   * BOOK REVIEW
+   */
+   body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #book-review-section {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  #book-review-section h2 {
+    text-align: center;
+  }
+  
+  #review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #review-form input,
+  #review-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #review-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(357, 42%, 58%);
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #all-reviews-container button {
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(167, 95, 107);
+    color: white;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+  
+  #review-form button:hover {
+    background-color: #73120f;
+  }
+  
+  #reviews-list {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+  }
+  
+  .review-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .review-item:last-child {
+    border-bottom: none;
+  }
+  
+  .review-title {
+    font-weight: bold;
+  }
+  
+  .review-author {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .review-content {
+    margin-top: 5px;
+  }
+  
+  .book-title {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .reviewer-name {
+    color: #cca074;
+  }
+  
+  .review-text {
+    color: #000;
+  }
+  
+  /* Add smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #all-reviews-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #see-all-reviews {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c06708b2;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  #see-all-reviews:hover {
+    background-color: #a96a12;
+  }
+  
+
 
   /**
    * CONTACT
@@ -2110,6 +2252,7 @@ footer {
   padding: 0 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s ease;
+  /*margin-right: 3px ;*/
 }
 
 .switch-label .sun-icon,
@@ -2292,3 +2435,8 @@ footer {
     margin: 0 5px;
   }
 }
+
+
+
+
+

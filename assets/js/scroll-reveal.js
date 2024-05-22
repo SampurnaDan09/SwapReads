@@ -29,3 +29,5 @@ ScrollReveal().reveal(".hero-title, .contact-form, .readmore-anim", {
 	delay: 300,
 	origin: "left",
 });
+
+

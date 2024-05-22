@@ -15,7 +15,7 @@
     messagingSenderId: "172844646482",
     appId: "1:172844646482:web:f55c1e6cd62774d898df8b",
     measurementId: "G-SRVRX110W7"
-  };
+    };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
